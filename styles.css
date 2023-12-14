@@ -1,0 +1,137 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+
+body {
+    background-image: url("backgroundImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #414c4f;
+    filter: brightness(80%);
+    
+   
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+    background-color: #d9bebe;
+    color: #0f0202;
+    padding: 10px;
+}
+/* Additional styling for navigation links */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url('your-hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.para1 {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+p{
+    font-family: Lato, Arial, sans-serif;
+    font-style: normal;
+    font-size: medium;
+    border: 1px solid #eff0f1;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #ff3a3a;
+}
+
+/* Footer styles */
+footer {
+  background-color: #100202;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+.display-4 {
+    font-family: 'Helvetica', sans-serif;
+    color: rgb(15, 3, 63);
+    font-size: 48px;
+   
+    /* Add any other custom styles you want */
+  }
+
+  .center {
+    text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+}
