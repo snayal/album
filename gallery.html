@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gallery</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Gallery | My Family Album</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-          <div class="container">
-            <h1 class="logo">SR</h1>
-            <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="#">Collections</a></li>
-              <li><a href="#">Topics</a></li>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Join</a></li>
-              <li><a href="#">Log in</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
+        <nav aria-label="Main Navigation">
+            <div class="container">
+                <a href="index.html" class="logo" aria-label="Homepage">My Family Album</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-      </header>
-   
-    <main>
-        <h2 class="display-4 center">Photo Gallery</h2>
-        <div class="photos">
-            <img src="https://s3.amazonaws.com/nayal-rautela-familypic/Sunflower.jpg" alt="Family Photo 1" width="380" height="550">
-            <img src="https://s3.amazonaws.com/nayal-rautela-familypic/Bright Light Cosmos.jpg" alt="Cosmos" width="370" height="550">
-            <img src="https://s3.amazonaws.com/nayal-rautela-familypic/Black-eye-susan_Gloriosa Daisy.jpg" alt="Daisy" width="370" height="550">
-            <img src="https://s3.amazonaws.com/nayal-rautela-familypic/Parakeets.jpg" alt="Parakeet" width="550" height="470">
-            <img src="https://s3.amazonaws.com/nayal-rautela-familypic/Shashi-Painting.JPEG" alt="Painting" width="577" height="470">
+    </header>
 
-            <!-- Add more images here -->
-        </div>
+    <main>
+        <section class="gallery-section">
+            <h1>Photo Gallery</h1>
+            <p>Explore cherished memories in our family photo collection.</p>
+            <div class="gallery-grid" aria-live="polite">
+                <!-- Example image block. Duplicate or generate more as needed -->
+                <figure class="gallery-item">
+                    <img src="images/photo1.jpg" alt="Family picnic at the park" loading="lazy">
+                    <figcaption>Family picnic, Spring 2023</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/photo2.jpg" alt="Graduation day group photo" loading="lazy">
+                    <figcaption>Graduation Day</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/photo3.jpg" alt="Holiday celebration by the fireplace" loading="lazy">
+                    <figcaption>Holiday Celebration</figcaption>
+                </figure>
+                <!-- Add more <figure> blocks as needed -->
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 My Family Album. All rights reserved.</p>
+        <p>&copy; 2025 My Family Album. All rights reserved.</p>
     </footer>
 </body>
 </html>
