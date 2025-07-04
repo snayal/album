@@ -1,137 +1,208 @@
 /* Reset styles */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Global styles */
-
 body {
-    background-image: url("backgroundImage.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    color: #414c4f;
-    filter: brightness(80%);
-    
-   
+  background-image: url("backgroundImage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Arial', 'Lato', sans-serif;
+  color: #2b363a;
+  min-height: 100vh;
+  line-height: 1.6;
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
+  width: 100%;
 }
 
-/* Header styles */
+/* Header */
 header {
-  background-color: #fff;
-  padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-nav {
-    background-color: #d9bebe;
-    color: #0f0202;
-    padding: 10px;
-}
-/* Additional styling for navigation links */
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right: 10px;
+  background: rgba(255,255,255,0.96);
+  padding: 24px 0 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #401c6c;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  background-color: #c2b3b3;
+  padding: 12px 0;
+  border-radius: 6px;
+  margin-top: 8px;
 }
 
 nav ul {
   list-style: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding-left: 0;
 }
 
 nav ul li {
   display: inline-block;
-  margin-right: 10px;
 }
 
-nav ul li a {
-  color: #333;
+nav ul li a,
+nav a {
+  color: #fff;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
-/* Hero section styles */
+nav ul li a:hover,
+nav a:hover,
+nav ul li a:focus,
+nav a:focus {
+  color: #ff3a3a;
+  outline: none;
+}
+
+/* Hero section */
 .hero {
   background-image: url('your-hero-image.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px;
+  min-height: 380px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 32px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+  margin-bottom: 32px;
 }
 
 .hero-title {
-  font-size: 36px;
+  font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,.35);
 }
 
 .hero-description {
-  color: #fff;
-  margin-bottom: 20px;
+  color: #f5f5f5;
+  margin-bottom: 24px;
+  font-size: 1.2rem;
+  max-width: 600px;
 }
+
+.para1,
+p {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #e5e6e8;
+  background: rgba(255,255,255,0.83);
+  padding: 16px 18px;
+  border-radius: 6px;
+  margin: 18px 0;
+  color: #2b363a;
+}
+
 .para1 {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: normal;
+  line-height: 1.6;
 }
-p{
-    font-family: Lato, Arial, sans-serif;
-    font-style: normal;
-    font-size: medium;
-    border: 1px solid #eff0f1;
-    padding: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+
+/* Button styles */
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 28px;
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ff3a3a;
+  color: #fff;
 }
 
 .btn-primary {
   background-color: #ff3a3a;
 }
 
-/* Footer styles */
-footer {
-  background-color: #100202;
-  padding: 20px 0;
-  color: #fff;
-  text-align: center;
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #d82c2c;
 }
-.display-4 {
-    font-family: 'Helvetica', sans-serif;
-    color: rgb(15, 3, 63);
-    font-size: 48px;
-   
-    /* Add any other custom styles you want */
-  }
 
-  .center {
-    text-align: center;
+/* Footer */
+footer {
+  background-color: #1a1721;
+  padding: 28px 0 20px 0;
+  color: #fafafa;
+  text-align: center;
+  margin-top: 48px;
+  border-top: 2px solid #c2b3b3;
 }
 
 .footer-text {
-  font-size: 14px;
+  font-size: 0.95rem;
+  opacity: 0.93;
+}
+
+/* Typography */
+.display-4 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1d0b37;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Utility classes */
+.center {
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .container {
+    padding: 0 8px;
+  }
+  .hero {
+    padding: 32px 12px;
+    min-height: 260px;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
 }
